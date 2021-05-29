@@ -1,15 +1,23 @@
+import logo from './logo.svg';
 import './App.css';
 
 function App() {
   return (
-    <div>
-      <h2>Add a new task to your to-do list</h2>
-      <br></br>
-      <input type="text" class="custom-input" onChange={this.handleChange} />
-      &nbsp;
-      <br></br>
-      <button class="custom-button" onClick={this.handleSubmit}>Add</button>
-      <br></br>
+    <div className="App">
+      <header className="App-header">
+        <img src={logo} className="App-logo" alt="logo" />
+        <p>
+          Edit <code>src/App.js</code> and save to reload.
+        </p>
+        <a
+          className="App-link"
+          href="https://reactjs.org"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+           React
+        </a>
+      </header>
     </div>
   );
 }
